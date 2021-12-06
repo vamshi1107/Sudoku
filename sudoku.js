@@ -64,6 +64,9 @@ document.querySelectorAll("td").forEach((ele) => {
     ele.firstChild.addEventListener("change", (r) => {
         check(ele, r)
     })
+    ele.firstChild.addEventListener("input", (r) => {
+        check(ele, r)
+    })
     ele.addEventListener("dblclick", () => {
         ele.firstChild.style.backgroundColor = "red"
         ele.style.backgroundColor = "red"
